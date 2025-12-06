@@ -26,15 +26,15 @@ export default function FlightDetails() {
 
   const outboundItinerary = offer.itineraries[0];
   const returnItinerary = offer.itineraries.length > 1 ? offer.itineraries[1] : null;
-  
+
   const renderSegment = (segment: any, isLast: boolean) => {
     const layoverDuration = segment.duration.replace("PT", "").replace("H", "h ").replace("M", "m").toLowerCase();
     return (
       <div key={segment.id}>
         <div className="flex items-center">
           <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center ring-2 ring-gray-200 overflow-hidden">
-            <img 
-              src={`https://logos.skyscnr.com/images/airlines/favicon/${segment.carrierCode}.png`} 
+            <img
+              src={`https://logos.skyscnr.com/images/airlines/favicon/${segment.carrierCode}.png`}
               alt={`${segment.carrierCode} logo`}
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

@@ -1,12 +1,19 @@
 import { MapPin, ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const handleStartJourney = () => {
+    navigate('/flights');
+  };
+
 
   return (
     <div id="home" className="relative h-screen pt-16 overflow-hidden">
@@ -54,7 +61,9 @@ export default function Hero() {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <button className="group inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl hover:shadow-teal-500/50">
+          <button 
+            onClick={handleStartJourney}
+            className="group inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-2xl hover:shadow-teal-500/50">
             Start Your Journey
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>

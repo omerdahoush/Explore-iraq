@@ -3,40 +3,28 @@ import { MapPin } from 'lucide-react';
 export default function Gallery() {
   const galleryImages = [
     {
-      title: 'Babylon - Ishtar Gate',
-      location: 'Southern Iraq',
-      description: 'Ancient Mesopotamian gate with distinctive blue tiles',
-      image: 'https://images.pexels.com/photos/11632711/pexels-photo-11632711.jpeg'
+      title: 'Babylon',
+      location: 'Babil Governorate, Iraq',
+      description: 'The ancient city of Babylon, a major city of ancient Mesopotamia.',
+      image: '/imges/babylon.jpg'
     },
     {
-      title: 'Baghdad Skyline',
-      location: 'Baghdad',
-      description: 'Modern Baghdad along the Tigris River',
-      image: 'https://images.pexels.com/photos/3355365/pexels-photo-3355365.jpeg'
+      title: 'Baghdad',
+      location: 'Baghdad, Iraq',
+      description: 'The capital of Iraq and one of the largest cities in the Arab world.',
+      image: '/imges/baghdad.jpg'
     },
     {
-      title: 'Marshlands',
-      location: 'Southern Iraq',
-      description: 'Traditional reed houses in the Mesopotamian Marshes',
-      image: 'https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg'
+      title: 'Erbil',
+      location: 'Kurdistan Region, Iraq',
+      description: 'The capital and most populated city in the Kurdistan Region of Iraq.',
+      image: '/imges/erbil.jpg'
     },
     {
-      title: 'Ancient Ruins',
-      location: 'Ur',
-      description: 'Archaeological remains of ancient Mesopotamian cities',
-      image: 'https://images.pexels.com/photos/258363/pexels-photo-258363.jpeg'
-    },
-    {
-      title: 'Desert Landscape',
-      location: 'Western Iraq',
-      description: 'Golden desert of Iraq under clear skies',
-      image: 'https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg'
-    },
-    {
-      title: 'Traditional Bazaar',
-      location: 'Baghdad',
-      description: 'Vibrant traditional markets filled with local crafts',
-      image: 'https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg'
+      title: 'Najaf',
+      location: 'Najaf Governorate, Iraq',
+      description: 'A city in central Iraq about 160 km south of Baghdad. It is the capital of Najaf Governorate.',
+      image: '/imges/najaf.jpg'
     }
   ];
 
